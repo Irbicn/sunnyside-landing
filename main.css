@@ -106,7 +106,7 @@ html{
       text-decoration: underline var(--light-yellow);
   }
   .about-container .egg{
-    height: 100%;
+    height: 50vh;
     width: 100%;
     background-image: url("./images/mobile/image-transform.jpg");
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ html{
     background-size: cover;
   }
   .about-container .cup{
-    height: 100%;
+    height: 50vh;
     width: 100%;
     background-image: url("./images/mobile/image-stand-out.jpg");
     background-repeat: no-repeat;
@@ -256,9 +256,11 @@ html{
       height: 60vh;
     }
     .about-container .cup{
+      height: 100%;
       order: 3; 
     }
     .about-container .egg{
+      height: 100%;
       order: 0;
     }
     .work-container{
