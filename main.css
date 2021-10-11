@@ -1,0 +1,280 @@
+:root{
+    --title: 3rem;
+    --size: 1.8rem;
+    --color: #656468;
+    --secondary-color: #abaab3;
+    --black: #000000;
+    --light-yellow: #FFEA6F;
+    --green: #1d5349;
+    --blue: #1c516c;
+    --light-green: #8fd6c8;
+    --white: rgb(255, 255, 255);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+html{
+    font-size: 62.5%;
+    font-family: "Roboto";
+}
+  .header{
+    height: 65vh;
+    background-image: url(./images/mobile/image-header.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-color: #3ebfff;
+    padding: 12px;
+  }
+  .header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 24px;
+    height: 40px;
+    position: relative;
+  }
+  .header nav > a{
+    cursor: pointer;
+    display:block;
+  }
+  .nav-menu{
+    background-color: var(--white);
+    position: absolute;
+    top: 50px;
+    right: 24px;
+    display: none;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    width: calc(100% - 48px);
+    height: 45vh;
+  }
+  .nav-menu a{
+    color: var(--color);
+    font-size: var(--size);
+    font-weight: 500;
+  }
+  .nav-menu a:hover{
+    padding: 10px 30px;
+    background-color: var(--light-yellow);
+    border-radius: 20px;
+  }
+  .header .nav-icon{
+    width: 25px;
+  }
+  .header div{
+    width: 100%;
+    display:grid;
+    place-items: center;
+  }
+  .header div h1{
+    font-size: var(--title);
+    color: white;
+    margin-top: 10px;
+  }
+
+
+  .about-container{
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+  .about-container .about-content{
+      text-align: center;
+      padding: 24px;
+      display: grid;
+      row-gap: 20px;
+      height: 50vh;
+  }
+  .about-container .about-content strong{
+      font-size: var(--title);
+      font-weight: 900;
+  }
+  .about-container .about-content p{
+      font-size: var(--size);
+      color:var(--color);
+      font-weight: 500;
+      max-width: 420px;
+  }
+  .about-container .about-content a{
+      color:var(--black);
+      font-size: 2rem;
+      font-weight: 700;
+      text-decoration: underline var(--light-yellow);
+  }
+  .about-container .egg{
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/mobile/image-transform.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .about-container .cup{
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/mobile/image-stand-out.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .graphic{
+      background-image: url(./images/mobile/image-graphic-design.jpg);
+      color: var(--green);
+  }
+  .photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+    color: var(--blue);
+  }
+  .work{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 44px;
+    height:90vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    padding: 20px;
+  }
+  .work strong{
+      font-size: var(--title);
+      font-weight: 700;
+      margin-bottom: 20px;
+  }
+  .work p{
+      font-size: var(--size);
+      max-width: 420px;
+  }
+  .testimonials{
+      display: grid;
+      text-align: center;
+      width: 100%;
+      row-gap: 32px;
+      place-items: center;
+      padding: 24px 0;
+  }
+
+  .testimonials strong{
+    color: var(--color);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .testimonial-container{
+    width: 100%;
+    padding: 12px;
+    max-width: 300px;
+  }
+  .testimonial-container img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  .testimonial-container p:nth-child(2){
+    color: var(--color);
+    margin-bottom: 16px;
+    font-size: var(--size);
+  }
+  .testimonial-container b{
+    font-size: 1.8rem;
+  }
+  .testimonial-container p:last-child{
+      color: var(--secondary-color);
+      font-size: 1.6rem;
+  }
+  
+  .gallery{
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+  }
+  .gallery img{
+    width: 100%;
+  }
+  .footer{
+    background-color: var(--light-green);
+    color: var(--green);
+    place-items: center;
+    display: grid;
+    text-align: center;
+  }
+  .footer b{
+    font-size: 4rem;
+  }
+  .footer .links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80px;
+    align-items: center;
+    margin-bottom: 24px;
+    column-gap: 20px;
+  }
+  .footer .links a{
+    color:var(--green);
+    font-size: var(--size);
+  }
+  .footer .social{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+    column-gap: 30px;
+  }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution p {font-size: var(--size);}
+  .attribution a { color: hsl(228, 45%, 44%); font-size: var(--size);}
+  @media (min-width: 600px) {
+    .header{
+      height: 90vh;
+    }
+    .header #nav-menu{
+      display: flex !important;
+      position: static;
+      height: auto;
+      width: auto;
+      column-gap: 10px;
+      background-color: transparent;
+    }
+    .nav-menu a{
+      color: var(--white);
+    }
+    .nav-menu a:hover{
+      background-color: var(--white);
+      color: var(--color);
+    }
+    .header nav > a{
+      display: none;
+    }
+    .about-container{
+      grid-template-columns: 1fr 1fr;
+    }
+    .about-container .about-content{
+      height: 60vh;
+    }
+    .about-container .cup{
+      order: 3; 
+    }
+    .about-container .egg{
+      order: 0;
+    }
+    .work-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+   
+    .testimonials{
+      grid-template-rows: 1fr auto;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .testimonials strong{
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    .gallery{
+      grid-template:auto/ repeat(4, 1fr);
+    }
+  }
